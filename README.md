@@ -32,11 +32,11 @@ TypeScript is a superset of JavaScript that adds static typing and other feature
 
 To get started with the demo application, follow these steps:
 
-1. Install the dependencies by running `npm install`.
-2. Create a CockroachDB database in the UI and add the database URL to the `.env` file as the `DIRECT_URL` value.
+1. Install the dependencies by running `npm install` in the root and api directories.
+2. Create a CockroachDB database in the UI and add the database URL to the `.env` file as the `DIRECT_URL` value of the api directory.
 3. Create an Prisma Accelerate instance in the UI and add the connection string to the `.env` file as the `DATABASE_URL` value.
-4. In the Prisma Accelerate settings UI, add the CockroachDB connection string and save.
-5. Run `npx prisma migrate dev --name init` to create the initial database schema.
-6. Run `npx prisma generate --no-engine` to generate the Prisma client.
+4. In the Prisma Accelerate settings UI, add the CockroachDB connection string and save in the api directory .env file.
+5. In the Api run `npx prisma migrate dev --name init` to create the initial database schema in.
+6. Then run `npx prisma generate --no-engine` to generate the Prisma client.
 7. Run `npm run dev` to run the application locally.
 8. Run `npm run deploy` to deploy the application to Cloudflare Workers.
