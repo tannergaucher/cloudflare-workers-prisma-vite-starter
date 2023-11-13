@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
+
+:root {
+  --serif: "Playfair Display", serif;
+  --accent-1: #f5f5f5;
+  --accent-2: #e3e3e3;
+}
+
+body {
+  font-family: var(--serif);
+}
